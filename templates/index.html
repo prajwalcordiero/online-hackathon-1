@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Insights Dashboard{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">📈 Profit Optimization Dashboard</h1>
+
+<div class="alert alert-info-custom" style="border-left: 5px solid #00796b; background-color: #e0f2f1; padding: 15px; margin-bottom: 25px;">
+    <strong>Status:</strong> {{ message }}
+</div>
+
+<div class="card shadow-sm mb-5">
+    <div class="card-header">
+        <h2>💰 Dynamic Pricing & Inventory Recommendations</h2>
+        <p class="mb-0">Actionable insights generated to maximize margin and minimize waste.</p>
+    </div>
+    <div class="card-body">
+        {% if insights_table %}
+            <div class="table-responsive">
+                {{ insights_table | safe }}
+            </div>
+        {% else %}
+            <p class="text-danger">Failed to generate insights. Please check the status message above.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

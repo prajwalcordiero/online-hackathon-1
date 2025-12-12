@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}About Our Solution{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">ℹ️ About the Data-Driven Retail Solution</h1>
+
+<div class="card shadow-sm p-4">
+    <p class="lead">This application demonstrates a data-driven approach to solving common challenges faced by Nordic retailers: fluctuating demand, static pricing, and operational costs.</p>
+
+    <h3>Our Approach</h3>
+    <ul>
+        <li><strong>Demand Forecasting:</strong> We analyze historical sales data, segmenting it by region and product, to predict future inventory needs and prevent both overstocking (waste) and understocking (lost sales).</li>
+        <li><strong>Dynamic Pricing:</strong> We move beyond manager 'gut feeling' by suggesting real-time price adjustments based on the demand forecast, current stock levels, and competitor pricing (simulated).</li>
+        <li><strong>Technology Stack:</strong> The application uses **Python (Flask)** for the backend, **Pandas** for high-speed data processing, and **HTML/Bootstrap** for a responsive user interface.</li>
+    </ul>
+
+    <p class="mt-4 text-muted">This proof-of-concept lays the foundation for integrating complex machine learning models to maximize profitability and operational efficiency.</p>
+</div>
+{% endblock %}
