@@ -1,5 +1,6 @@
 import pandas as pd
 from flask import Flask, render_template
+import os
 
 app = Flask(__name__)
 DATA_FILE = 'retail_data.csv'
@@ -95,4 +96,4 @@ def contact_page():
     return render_template('contact.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0" , port=5000, debug=True)
